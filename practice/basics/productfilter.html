@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Filter</title>
+</head>
+<body>
+    <input id="myinput" type="text" name="" placeholder="search." onkeyup="searchfun()">
+    <table id="mytable" class="table">
+        <tr>
+            <th>Product</th>
+            <th>Price </th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Soap</td>
+            <td>30</td>
+            <td>Women</td>
+        </tr>
+        <tr>
+            <td>Shirt</td>
+            <td>3200</td>
+            <td>Men</td>
+        </tr>
+        <tr>
+            <td>Bodywash</td>
+            <td>300</td>
+            <td>Womens</td>
+        </tr>
+        <tr>
+            <td>Clove</td>
+            <td>2000</td>
+            <td>Men</td>
+        </tr>
+        <tr>
+            <td>Dryer</td>
+            <td>2000</td>
+            <td>Mens,Womens</td>
+        </tr>
+        <tr>
+            <td>Conditioner</td>
+            <td>202</td>
+            <td>Womens</td>
+        </tr>
+        <tr>
+            <td>Pants</td>
+            <td>2000</td>
+            <td>Men</td>
+        </tr>
+        <tr>
+            <td>Sweater</td>
+            <td>1200</td>
+            <td>Men</td>
+        </tr>
+        <tr>
+            <td>Jackets</td>
+            <td>2000</td>
+            <td>Mens</td>
+        </tr>
+        <tr>
+            <td>Case</td>
+            <td>200</td>
+            <td>Men</td>
+        </tr>
+    </table>
+
+    <script>
+        const searchfun = () =>{
+            const filter = document.getElementById('myinput').value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

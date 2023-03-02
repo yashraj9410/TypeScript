@@ -61,3 +61,23 @@ console.log(userDetails("Not Permitted", { name: "Yash", id: 123 }))
 // generics classes 
 
 export { }
+
+
+//  generics classes 
+
+class Products<T>{ 
+    products:T[]=[];
+
+    public addToCart(product:T){
+        this.products.push(product);
+    }
+
+    public displayProducts():void{
+        console.log(this.products);
+    }
+}
+
+const obj = new Products();
+obj.addToCart("coke");
+obj.addToCart(231);
+obj.displayProducts();

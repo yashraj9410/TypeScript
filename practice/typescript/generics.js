@@ -1,5 +1,7 @@
+"use strict";
 // generics are used to make reusable code 
 // generic locks the paramter type and return type of any function
+exports.__esModule = true;
 function func(val) {
     return val;
 }
@@ -25,4 +27,20 @@ var userDetails = function (val1, val2) {
     };
 };
 console.log(userDetails("Not Permitted", { name: "Yash", id: 123 }));
-// generics classes 
+//  generics classes 
+var Products = /** @class */ (function () {
+    function Products() {
+        this.products = [];
+    }
+    Products.prototype.addToCart = function (product) {
+        this.products.push(product);
+    };
+    Products.prototype.displayProducts = function () {
+        console.log(this.products);
+    };
+    return Products;
+}());
+var obj = new Products();
+obj.addToCart("coke");
+obj.addToCart(231);
+obj.displayProducts();

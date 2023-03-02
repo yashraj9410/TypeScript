@@ -18,7 +18,7 @@ interface User {
     age: number;
 }
 
-function getuser<User>(val: User): User {
+function getuser<Type extends User >(val: Type): Type {
     return val;
 }
 

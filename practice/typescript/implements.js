@@ -1,10 +1,10 @@
-var Person = /** @class */ (function () {
-    function Person() {
-    }
-    Person.prototype.returnname = function (name) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Person {
+    returnname(name) {
         return name;
-    };
-    return Person;
-}());
-var p = new Person();
+    }
+}
+const p = new Person();
 console.log(p.returnname("yash"));
+//# sourceMappingURL=implements.js.map

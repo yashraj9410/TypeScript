@@ -1,46 +1,37 @@
 "use strict";
-// generics are used to make reusable code 
-// generic locks the paramter type and return type of any function
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 function func(val) {
     return val;
 }
 function getuser(val) {
     return val;
 }
-//here all parameters and return type id set to interface type user 
-// using array with generics 
 function getSearchElement(products) {
     return products[3];
-    //we cannot directly return the index 3 because return type will also shift to element of array 
-    // that means if i am taking a parameter an array then return type T signifies that a value from the array must be returned 
-    // to return a number we must set return type of function from  T to number 
 }
-//creating a arrow function
-var getElement = function (products) {
+const getElement = (products) => {
     return products[3];
 };
-var userDetails = function (val1, val2) {
+const userDetails = (val1, val2) => {
     return {
-        val1: val1,
-        val2: val2
+        val1,
+        val2
     };
 };
 console.log(userDetails("Not Permitted", { name: "Yash", id: 123 }));
-//  generics classes 
-var Products = /** @class */ (function () {
-    function Products() {
+class Products {
+    constructor() {
         this.products = [];
     }
-    Products.prototype.addToCart = function (product) {
+    addToCart(product) {
         this.products.push(product);
-    };
-    Products.prototype.displayProducts = function () {
+    }
+    displayProducts() {
         console.log(this.products);
-    };
-    return Products;
-}());
-var obj = new Products();
+    }
+}
+const obj = new Products();
 obj.addToCart("coke");
 obj.addToCart(231);
 obj.displayProducts();
+//# sourceMappingURL=generics.js.map

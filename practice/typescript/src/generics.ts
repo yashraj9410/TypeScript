@@ -18,7 +18,7 @@ interface User {
     age: number;
 }
 
-function getuser<Type extends User >(val: Type): Type {
+function getuser<Type extends User >(val: Type): User {
     return val;
 }
 
@@ -64,9 +64,9 @@ export { }
 
 
 //  generics classes 
-
+//here we are going to use generic because we dont know what sort of products are gonnna pass into my product array 
 class Products<T>{ 
-    products:T[]=[];
+    private products:T[]=[];
 
     public addToCart(product:T){
         this.products.push(product);

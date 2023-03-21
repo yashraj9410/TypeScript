@@ -6,6 +6,7 @@ interface hasfun{
     returnname(name:string):string;
 }
 
+// a class can implement a interface
 class Person implements hasfun{
     returnname(name: string): string {
         return name;

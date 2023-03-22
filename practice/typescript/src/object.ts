@@ -1,6 +1,8 @@
 //behaviour of objects 
 
-function createPerson({name:string, age:number}){}
+function createPerson({name,age} : {name:string , age:number}){
+    console.log(name,age);
+}
 createPerson({name:"Yash" ,age:24}) // a new object has been created
 
 //returnng an object using function

@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-function createPerson({ name: string, age: number }) { }
+function createPerson({ name, age }) {
+    console.log(name, age);
+}
 createPerson({ name: "Yash", age: 24 });
 function createCourse() {
     return { name: "reactjs", price: 399 };
@@ -13,4 +13,5 @@ let me = {
     name: "Yash",
     id: "213"
 };
+export {};
 //# sourceMappingURL=object.js.map

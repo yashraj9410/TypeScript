@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function add(num) {
     return num + num;
 }
@@ -19,4 +17,5 @@ name.map((names) => { return `name is ${name}`; });
 function handleerr(err) {
     throw new Error(err);
 }
+export {};
 //# sourceMappingURL=functions.js.map

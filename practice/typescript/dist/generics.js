@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function func(val) {
     return val;
 }
@@ -34,4 +32,5 @@ const obj = new Products();
 obj.addToCart("coke");
 obj.addToCart(231);
 obj.displayProducts();
+export {};
 //# sourceMappingURL=generics.js.map

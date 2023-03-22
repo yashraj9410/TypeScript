@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Product {
     constructor(name, id, exp, quan) {
         this.name = name;
@@ -53,4 +51,5 @@ const guest = new Shampoo("Dove", 1213, "12/10/2025", 249, 2);
 guest.display();
 const user = new MemberShampoo("Dove", "1213", "2025", 249, 1);
 user.display();
+export {};
 //# sourceMappingURL=oop.js.map

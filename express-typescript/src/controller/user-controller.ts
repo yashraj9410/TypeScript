@@ -33,6 +33,17 @@ const read_user = async(req:Request,res:Response,next:NextFunction) => {
                     
 }
 
+//read all user 
+const read_Alluser = async(req:Request,res:Response,next:NextFunction) => {
+    // const id = req.params.id;
+
+    return await User.find()
+                    .then(data => {res.status(200).send({data})}) 
+                    .catch(err => {res.status(404).json({err})})
+
+                    
+}
+
 // update a user by id 
 const update_user = async(req:Request,res:Response,next:NextFunction) => {
     const id = req.params.id;
@@ -67,4 +78,4 @@ const delete_user = async(req:Request,res:Response,next:NextFunction) => {
 
 }
 
-export default { create_user , read_user , update_user , delete_user}
+export default { create_user , read_user , update_user , delete_user , read_Alluser}

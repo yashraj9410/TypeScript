@@ -26,9 +26,10 @@ const startServer = () =>{
     app.use(express.json());
 
     app.use("/" , router);
-    
+
     http.createServer(app).listen(config.server.port, ()=>{
         console.log(`server listening at ${config.server.port}`);
     })
     
 };
+

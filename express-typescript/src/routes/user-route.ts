@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/", controller.read_user);
 router.post("/" , controller.create_user);
-router.put("/", controller.update_user);
-router.delete("/" , controller.delete_user);
+router.put("/:id", controller.update_user);
+router.delete("/:id" , controller.delete_user);
 
 export = router;

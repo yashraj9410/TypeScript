@@ -98,6 +98,8 @@ const getUserProperty = <T extends hasId , K extends keyof T>(users:T[], key:K):
     // the return statement will map through every user of the array and will return the value for user[key] 
 }
 
+//only T denotes an element of the array of users 
+
 const userArray = [
     {
         "id": 2,

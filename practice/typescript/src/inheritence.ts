@@ -1,4 +1,4 @@
-class Employee{
+class Employee{                                                          // parent class
     protected name:string 
     protected age :number 
 

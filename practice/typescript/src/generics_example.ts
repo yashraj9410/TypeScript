@@ -174,3 +174,34 @@ const userArray = [
 
 console.log(getUserProperty(userArray , "id")); // it wil return a array of values for key id
 console.log(getUserProperty(userArray , "email"));
+
+
+// using generics with class 
+
+class stateObject<T> {
+    private data:T
+
+    constructor(value:T){
+        this.data = value;
+    }
+
+    get userdata():T{
+        return this.data;
+    }
+
+    set userdata(value:T){
+        this.data =value;
+    }
+}
+
+const obj = new stateObject("yash"); // this will refert o string data only 
+console.log(obj.userdata);
+
+// we can use unions to provide more than one types to the class
+const newObj = new stateObject<(string | boolean | number)[]>([12,13]);
+console.log(newObj.userdata);
+
+// changing the array type to string 
+newObj.userdata = ["yash","raj"];
+console.log(newObj.userdata);
+

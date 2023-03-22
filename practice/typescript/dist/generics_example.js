@@ -117,4 +117,21 @@ const userArray = [
 ];
 console.log(getUserProperty(userArray, "id"));
 console.log(getUserProperty(userArray, "email"));
+class stateObject {
+    constructor(value) {
+        this.data = value;
+    }
+    get userdata() {
+        return this.data;
+    }
+    set userdata(value) {
+        this.data = value;
+    }
+}
+const obj = new stateObject("yash");
+console.log(obj.userdata);
+const newObj = new stateObject([12, 13]);
+console.log(newObj.userdata);
+newObj.userdata = ["yash", "raj"];
+console.log(newObj.userdata);
 //# sourceMappingURL=generics_example.js.map

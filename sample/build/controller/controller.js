@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createUser = void 0;
+exports.findUsers = exports.createUser = void 0;
 //controller methods 
 const model_1 = __importDefault(require("../model/model"));
 const createUser = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
@@ -21,7 +21,14 @@ const createUser = (req, res, next) => __awaiter(void 0, void 0, void 0, functio
         age: 12
     });
     yield user.save()
-        .then(user => console.log(user))
+        .then(user => res.send({ user }))
         .catch(err => console.log(err));
 });
 exports.createUser = createUser;
+//get all users
+const findUsers = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    yield model_1.default.find()
+        .then(data => res.send({ data }))
+        .catch(err => res.send({ err }));
+});
+exports.findUsers = findUsers;

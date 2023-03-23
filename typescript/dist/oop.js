@@ -52,4 +52,3 @@ guest.display();
 const user = new MemberShampoo("Dove", "1213", "2025", 249, 1);
 user.display();
 export {};
-//# sourceMappingURL=oop.js.map

@@ -134,4 +134,3 @@ const newObj = new stateObject([12, 13]);
 console.log(newObj.userdata);
 newObj.userdata = ["yash", "raj"];
 console.log(newObj.userdata);
-//# sourceMappingURL=generics_example.js.map

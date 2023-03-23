@@ -18,4 +18,3 @@ function handleerr(err) {
     throw new Error(err);
 }
 export {};
-//# sourceMappingURL=functions.js.map

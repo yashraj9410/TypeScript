@@ -6,4 +6,3 @@ class Person {
 const p = new Person();
 console.log(p.returnname("yash"));
 export {};
-//# sourceMappingURL=implements.js.map

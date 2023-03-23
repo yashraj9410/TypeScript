@@ -8,4 +8,3 @@ function getid(id) {
 getid(23);
 getid('23');
 const arr = [1, 2, "y"];
-//# sourceMappingURL=union.js.map

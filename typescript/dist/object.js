@@ -14,4 +14,3 @@ let me = {
     id: "213"
 };
 export {};
-//# sourceMappingURL=object.js.map

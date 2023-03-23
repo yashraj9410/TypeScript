@@ -33,4 +33,3 @@ class Developer extends Fresher {
 }
 const developer = new Developer("XYZ", 25, "ABC institute", "CSE", 500000, 2019, "3years", "Full Stack Developer");
 console.log(developer.data);
-//# sourceMappingURL=inheritence.js.map

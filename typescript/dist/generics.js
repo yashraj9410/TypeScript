@@ -33,4 +33,3 @@ obj.addToCart("coke");
 obj.addToCart(231);
 obj.displayProducts();
 export {};
-//# sourceMappingURL=generics.js.map

@@ -5,4 +5,7 @@ const user_1 = {
 };
 const a = 'name';
 console.log(user_1[a]);
-//# sourceMappingURL=index-signatures.js.map
+console.log(typeof user_1.age);
+for (let key in user_1) {
+    console.log(typeof key);
+}

@@ -8,7 +8,7 @@ function person(name, email, id, isPaid) {
     }
 }
 console.log(person("Yash", "raju@hmasjo.com", 87, true));
-function addnum(num) {
+function addnum(num = 1) {
     return num + num;
 }
 console.log(addnum(5));
@@ -17,4 +17,8 @@ name.map((names) => { return `name is ${name}`; });
 function handleerr(err) {
     throw new Error(err);
 }
+const total = (...arg) => {
+    return arg.map((prev, current) => prev + current);
+};
+console.log(total(1, 2, 3, 4, 5));
 export {};

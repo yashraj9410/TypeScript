@@ -2,9 +2,8 @@
 //tuuple are used when we have structured data to be stored'
 //example
 
-let user : [string,number,boolean]
+let user : [string,number,boolean]=["yash",21,true];
 //the above resembles the structured storage of data in the tuple user 
-user=["yash",21,true];
 
 //we can also create a type 
 type usercred =[string,number]

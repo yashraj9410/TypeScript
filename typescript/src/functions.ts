@@ -16,7 +16,7 @@ function person(name:string ,email:string ,id:number,isPaid:boolean ){
 console.log(person("Yash","raju@hmasjo.com",87,true));
 
 //returning the exact values in functions 
-function addnum(num:number):number{    //strict check for param andreturn val
+function addnum(num:number = 1):number{    //strict check for param andreturn val , here we have also passed a default parameter 
     return num +  num;
 }
 console.log(addnum(5));
@@ -34,3 +34,13 @@ name.map((names):string=>{return `name is ${name}`})
 function handleerr(err:string):never{
     throw new Error(err);
 }
+// the never type is also useful in case when we have a endless loop inside of the function or something that is interrupting the execution , not returning a valid thing 
+
+
+// using the rest parameter 
+
+const total = (...arg:number[]) => {       //... this is the rest parameter that infer tom take multiple values in the form of array 
+    return arg.map((prev,current) => prev+current);
+}
+
+console.log(total(1,2,3,4,5));  // note that the argument passed will not be in the form of array 

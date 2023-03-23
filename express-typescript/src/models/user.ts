@@ -1,5 +1,5 @@
 import mongoose , { Document, Schema, trusted } from 'mongoose';
-
+import {prop} from '@typegoose/typegoose';
 
 export interface user {      // keeping this interface for validations 
     name:string,

@@ -11,3 +11,8 @@
 //  const assert = document.getElementById("img") as HTMLImageElement;
 
  // the abov e type assertion is infering the type of assert to HTMLimageElement
+
+ const ele = document.getElementById("a") as HTMLImageElement;
+
+
+ 

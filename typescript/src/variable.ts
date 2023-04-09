@@ -11,3 +11,4 @@ export{}
 // if a variable is only declared and not assigned any value then javascript takes it as any 
 // to avoid type checking we use any 
 // any should not be used 
+// We can use as keyword for type conversion

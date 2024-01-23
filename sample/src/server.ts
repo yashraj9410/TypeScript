@@ -7,6 +7,7 @@ const server = express();
 server.use(express.json());
 server.use("/" ,router);
 
+// added mongo config
 mongoose
 .connect("mongodb+srv://yashraj7011:1234@cluster0.clmqdv7.mongodb.net/?retryWrites=true&w=majority")
 .then(()=> console.log("connected"))
